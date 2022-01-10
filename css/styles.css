@@ -201,22 +201,24 @@ padding: 10px 0;
 }
 
 .foto-nome-e-idade h2:nth-child(1){
-    margin-bottom: 8%;
+    margin-bottom: 1%;
 }
 
 .foto-nome-e-idade h2:nth-child(2){ /*Idade*/
     margin-left: 10px;
+    margin-right: 7px;
     font-weight: 500;
-    margin-bottom: 8%;
+    margin-bottom: 1%;
     
 }
 
 .verified{
-    color: turquoise;
-    float: right;
-    display: flex;
+    height: 18px;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
     align-items: center;
-    width: 500px;
+    margin-bottom: 7px;
 }
 
 .info{
