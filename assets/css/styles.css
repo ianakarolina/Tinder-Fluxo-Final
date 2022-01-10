@@ -1,0 +1,420 @@
+*{ 
+    box-sizing: border-box; 
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: rgb(240, 242, 244);
+    height: 100vh; 
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*navbar - barra rosa*/
+.navbar{
+background-image: linear-gradient(to right, rgb(243, 54, 112), rgb(254, 88, 61));
+display:flex;
+width: 25%;
+height: 12%;
+align-items: center;
+padding: 10px 0;
+}
+
+
+
+/*Ícones da barra rosa*/
+.navbar i{
+    fill: white;
+    background:rgba(80, 79, 79, 0.199);
+    box-shadow: rgba(119, 118, 118, 0.658);
+    border-radius: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.navbar i:nth-child(2){ /*handbag*/
+    margin-right: 4.5%;
+}
+
+.navbar i:nth-child(3){ /*shield*/
+    margin-right: 5%;
+}
+
+
+.texto-logo{
+    margin-left: 2%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(105, 105, 105, 0.13);
+    border-radius: 30px;
+    padding: 2%;
+    margin-right: 15%;
+}
+
+.logo{ /*Aqui é a logo da fluxo na barra rosa*/
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+}
+
+/* Esse é o texto "Fluxo Consultoria" em h4*/
+.texto-logo h4:nth-child(2){ 
+    display: flex;
+    font-weight: 500;
+    font-size: 90%;
+    padding: 5px; /*Pra afastar da logo da fluxo*/;
+    /*white-space:nowrap Pra retirar a quebra de texto*/
+}
+
+/*BARRINHA BRANCA MATCHES/MENSAGENS*/
+.mat-mes {
+    width: 25%;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items:flex-end;
+       
+}
+
+.match-message{
+    display: flex;
+    align-items: center;
+}
+
+.match-message h4:nth-child(1){ /*"Match"*/
+    font-size:0.9rem;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.match-message h4:nth-child(2){ /*"Mensagens*/
+    font-size:0.9rem;
+}
+
+.barrinha{
+    height: 10%;
+    width: 20%;
+    background-image: linear-gradient(to right, rgb(243, 54, 112), rgb(254, 88, 61));
+    display: flex;
+    flex-direction: column;
+    margin-left: -49%;  
+}
+
+/* PARTE BRANCA GRANDE*/
+
+#pai {
+    display: flex;
+    flex-direction: column;
+    height: 83%;
+    width: 25%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quadrado{
+    height: 25%;
+    width: 28%;
+    background-image: linear-gradient(to right, rgb(243, 54, 112), rgb(254, 88, 61));
+    border-radius: 10px;
+    box-shadow: 0 2px 15px 0 rgba(136, 136, 136, 0.77);
+    
+}
+
+.pergunta h2:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.pergunta h2:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.resumo h6:nth-child(1){
+    color: rgb(192, 196,199);
+    font-weight: 100;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    font-size: 0.8rem;
+}
+
+
+/*imagem e ações - parte cinza*/
+.imagem-e-acoes{
+    padding: 100px 0;
+    height: 100%;
+    width: 75%;
+    background-color:rgb(240, 242, 244);;
+    /*float: right; Pra alinhar a div à direita*/
+    display: flex;
+    position: fixed !important;
+    right: 0%;
+    top: 0%;
+    left: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto{
+    background:url(/Imagemeu.jpeg) center center/cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 24%;
+    display: flex;
+    align-items: flex-end;
+    color:#eee; /*Cor do texto*/
+    box-shadow: 0 2px 15px 0 rgba(136, 136, 136, 0.77);
+}
+
+.texto-da-foto{
+    padding: 15px; /*Pra afastar o texto da margem*/
+    background: rgb(2,0,36);
+    background:rgb(2,0,36);
+    background:linear-gradient( /*É isso que dá o degrade da foto*/
+        180deg,
+        rgba(2,0,36,1) 0%,
+        rgba(35,34,65,0) 0%,
+        rgba(0,0,0,0.7) 52%
+        );
+    border-radius: 5px;
+    width: 100%;
+}
+
+.foto-nome-e-idade{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px; /*Pra afastar um pouco da Bio*/
+    font-size: 1rem;
+}
+
+.foto-nome-e-idade h2:nth-child(1){
+    margin-bottom: 8%;
+}
+
+.foto-nome-e-idade h2:nth-child(2){ /*Idade*/
+    margin-left: 10px;
+    font-weight: 500;
+    margin-bottom: 8%;
+    
+}
+
+.info{
+    background:rgb(255, 255, 255);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    float:right;
+}
+
+.info h5:nth-child(1){
+    color: black;
+}
+
+.indica-online h6:nth-child(2){
+    line-height: 1.1rem;
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.verde{ /*A bolinha verde do online*/
+    display: flex;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(42,227,127);
+    align-content: center;
+    float: left;
+    margin-top: 4px;
+}
+
+.bio{
+    line-height: 1.1rem;
+    font-size: 0.7rem;
+}
+
+/*Ações*/
+.acoes{
+    display: flex;
+    flex-direction: auto;
+    align-items:center;
+    justify-content:space-evenly;
+    margin: 1rem 0;
+    margin-bottom: -5px;
+}
+
+.acao{
+    background:rgba(255, 247, 247, 0);
+    box-shadow: gray;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+    
+}
+
+.acoes .acao:nth-child(1){ /*Estilização do ícone de return*/
+    padding: 6px;
+    border-style:solid;
+    border-width:1px;;
+    border-color: rgb(233, 235, 238);
+    margin-left: -14px;
+}
+
+.acoes .acao:nth-child(2){  /*Estilização do ícone de x*/
+    padding: 12px;
+    border-style:solid;
+    border-width:1px;;
+    border-color: rgb(198, 44, 30);
+}
+
+.acoes .acao:nth-child(3){ /*Estilização do ícone de estrela*/
+    padding: 6px;
+    border-style:solid;
+    border-width:1px;;
+    border-color: rgb(48, 243, 239);
+}
+
+.acoes .acao:nth-child(4){ /*Estilização do ícone de coração*/
+    padding: 12px;
+    border-style:solid;
+    border-width:1px;;
+    border-color: rgb(45, 241, 135);
+}
+
+.acoes .acao:nth-child(5){ /*Estilização do ícone de raio*/
+    padding: 6px;
+    border-style:solid;
+    border-width:1px;;
+    border-color: rgb(186, 82, 245);
+    margin-right: -14px;
+}
+
+
+
+/*icones da barra cinza*/
+
+.iconesbarra{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(176,181,187);
+    text-align: center;
+}
+
+.oculto{
+    position: fixed;
+    bottom: 5px;
+    left: 40%;
+    background:rgb(176,181,187);
+    height: 20px;
+    width: 80px;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.oculto h6:nth-child(1){
+    color: white;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.icone:nth-child(2){ /*Esquerda*/
+    position: fixed !important;
+    bottom: 0px;
+    left: 47%;
+}
+
+.label-esquerda{
+    font-size: 0.7rem;
+    font-weight: 500;
+    position: fixed !important;
+    bottom: 8px;
+    margin-left: 3px;
+}
+
+.icone:nth-child(3){ /*Direita*/
+    position: fixed !important;
+    bottom: 0px;  
+    left: 52%;
+}
+
+.label-direita{
+    font-size: 0.7rem;
+    font-weight: 500;
+    position: fixed !important;
+    bottom: 8px;
+    margin-left: 3px;
+}
+
+.icone:nth-child(4){ /*Cima*/
+    position: fixed !important;
+    bottom: 0px;
+    left: 57%;
+}
+
+.label-cima{
+    font-size: 0.7rem;
+    font-weight: 500;
+    position: fixed !important;
+    bottom: 8px;
+    margin-left: 3px;
+}
+
+.icone:nth-child(5){ /*Baixo*/
+    position: fixed !important;
+    bottom: 0px;
+    left: 65%;
+    
+}
+.label-baixo{
+    font-size: 0.7rem;
+    font-weight: 500;
+    position: fixed !important;
+    bottom: 8px;
+    margin-left: 3px;
+}
+
+.retangulo{
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    bottom: 5px;
+    right: 21%;
+    height: 20px;
+    width: 70px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color:rgb(176,181,187);
+    border-width: 2px;
+}
+
+.proxima{
+    font-size: 0.7rem;
+    font-weight: 500;
+    position: fixed !important;
+    right: 15%;
+    bottom: 8px;
+    margin-left: 3px;
+}
