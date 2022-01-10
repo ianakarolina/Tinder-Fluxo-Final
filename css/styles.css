@@ -26,7 +26,7 @@ padding: 10px 0;
 /*Ícones da barra rosa*/
 .navbar i{
     fill: white;
-    background:rgba(80, 79, 79, 0.199);
+    background:rgba(80, 79, 79, 0.267);
     box-shadow: rgba(119, 118, 118, 0.658);
     border-radius: 50%;
     padding-left: 2%;
@@ -172,7 +172,7 @@ padding: 10px 0;
     background:url("../img/Imagemeu.jpeg") center center/cover;
     border-radius: 5px;
     height: 100%;
-    width: 24%;
+    width: 27%;
     display: flex;
     align-items: flex-end;
     color:#eee; /*Cor do texto*/
@@ -209,6 +209,14 @@ padding: 10px 0;
     font-weight: 500;
     margin-bottom: 8%;
     
+}
+
+.verified{
+    color: turquoise;
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 500px;
 }
 
 .info{
