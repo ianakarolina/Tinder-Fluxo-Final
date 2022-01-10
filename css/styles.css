@@ -169,7 +169,7 @@ padding: 10px 0;
 }
 
 .foto{
-    background:url(/Imagemeu.jpeg) center center/cover;
+    background:url("../img/Imagemeu.jpeg") center center/cover;
     border-radius: 5px;
     height: 100%;
     width: 24%;
